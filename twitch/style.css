@@ -1,0 +1,173 @@
+html, body, iframe, object
+{
+height: 100%;
+width: 100%;
+border: 0;
+}
+
+body
+{
+margin: 0;
+background: #19191F;
+font-family: Verdana, "Bitstream Vera Sans", "DejaVu Sans", Tahoma, Geneva, Arial, Sans-serif;
+}
+
+#playdiv
+{
+position: absolute;
+left: 0px;
+right: 0px;
+height: 100%;
+background: #333333;
+}
+
+#playdiv div
+{
+position: absolute;
+overflow: hidden;
+}
+
+#chatdiv
+{
+position: absolute;
+height: 100%;
+width: 340px;
+}
+
+#chatdiv iframe
+{
+position: absolute;
+}
+
+#chatnav
+{
+position: absolute;
+left: 80px;
+width: 180px;
+padding-top: 14px;
+text-align: center;
+font-size: 0.750em;
+}
+
+#menudiv
+{
+position: absolute;
+min-width: 48px;
+min-height: 48px;
+z-index: 1;
+color: #D9D9D9;
+}
+
+#menutop
+{
+padding: 15px 20px;
+border-bottom: 1px solid #CCCCCC;
+}
+
+sup
+{
+font-size: 0.625em;
+}
+
+#menubot
+{
+font-size: 0.750em;
+line-height: 1.5em;
+overflow: auto;
+}
+
+#notif
+{
+background: #F5B800;
+padding: 0 20px;
+margin-bottom: 1px;
+color: #000000;
+}
+
+#hlsmode
+{
+background: #00B8F5;
+padding: 0 20px;
+color: #000000;
+}
+
+#maindiv
+{
+padding: 20px 20px 20px 20px;
+overflow: hidden;
+zoom: 1;
+}
+
+.submenu
+{
+padding: 20px 20px 70px 20px;
+}
+
+img, input, select
+{
+vertical-align: middle;
+font-family: inherit;
+font-size: inherit;
+}
+
+#maindiv input, select
+{
+width: 115px;
+background: white;
+}
+
+#maindiv input, #volval
+{
+border: 0;
+padding: 2px;
+}
+
+#maindiv img
+{
+margin-left: 10px;
+}
+
+#strflds
+{
+position: relative;
+overflow: hidden;
+}
+
+#strflds div, .inpdiv
+{
+padding-top: 10px;
+}
+
+#more
+{
+position: absolute;
+left: 250px;
+color: #00B8F5;
+cursor: pointer;
+}
+
+#shrlnk
+{
+overflow: hidden;
+white-space: nowrap;
+}
+
+a
+{
+color: #00B8F5;
+}
+
+.submbtn
+{
+border: 1px solid #00B8F5;
+padding: 6px 8px;
+cursor: pointer;
+margin-right: 5px;
+}
+
+#backbtn
+{
+position: absolute;
+bottom: 20px;
+right: 20px;
+}

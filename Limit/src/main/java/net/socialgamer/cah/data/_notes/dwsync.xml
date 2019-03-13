@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="BlackCard.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="BlackDeck.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="BlankWhiteCard.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="CardSet.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="ConnectedUsers.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="Game.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="GameManager.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="GameOptions.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="OutOfCardsException.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="Player.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="PlayerPlayedCardsTracker.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="QueuedMessage.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="User.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="WhiteCard.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="WhiteDeck.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+</dwsync>

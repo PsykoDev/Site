@@ -1,0 +1,401 @@
+/*
+Theme Name: ZeratoR 
+Author: William Traoré
+Author URI: http://williamtraore.com/
+Description: Thème pour le site de ZeratoR.
+Version: 2.0
+*/
+
+/* RESET CSS */
+
+body,div,fieldset,input,img,a,a:hover,select,li ,ul, p, h1, h2, h3, h4, h5, h6, iframe
+{
+    margin:0;
+    padding:0;
+    border:0;
+    text-decoration:none;
+    outline:none;
+    list-style:none;
+    vertical-align:bottom;
+    white-space:normal;
+}
+
+/* CENTRAGE */
+
+.global {width:80% !important; max-width: 80%!important;} 
+
+
+/* ANIMATION */
+
+.anim {-khtml-transition: 0.4s; -ie-transition: 0.4s; -o-transition: 0.4s; -moz-transition: 0.4s; -webkit-transition: 0.4s; transition: 0.4s;}
+
+
+/* CLEAR */
+
+.clear {clear: both;}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'socicon';
+    src: url("socicon.eot"/*tpa=http://zerator.com/wp-content/themes/zeratorv2/font/socicon.eot*/);
+    src: url("socicon.eot-#iefix"/*tpa=http://zerator.com/wp-content/themes/zeratorv2/font/socicon.eot?#iefix*/) format('embedded-opentype'),
+         url("socicon.woff"/*tpa=http://zerator.com/wp-content/themes/zeratorv2/font/socicon.woff*/) format('woff'),
+         url("socicon.ttf"/*tpa=http://zerator.com/wp-content/themes/zeratorv2/font/socicon.ttf*/) format('truetype'),
+         url("socicon.svg#sociconregular"/*tpa=http://zerator.com/wp-content/themes/zeratorv2/font/socicon.svg#sociconregular*/) format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+@font-face {font-family: 'ProxLight'; src: url("ProximaNova-Light.otf"/*tpa=http://zerator.com/wp-content/themes/zeratorv2/font/ProximaNova-Light.otf*/);}
+@font-face {font-family: 'ProxBold'; src: url("ProximaNova-Bold.otf"/*tpa=http://zerator.com/wp-content/themes/zeratorv2/font/ProximaNova-Bold.otf*/);}
+
+
+
+
+
+
+
+
+
+/* BASE */
+
+h1 {font-family: 'ProxBold'!important; font-size: 1.7em!important; color: #FFF!important; font-weight: normal!important; letter-spacing: 2px; text-transform: uppercase;}
+h3 {font-family: 'ProxLight'!important; font-size: 1.5em!important; color: #FFF!important; text-transform: uppercase;}
+.bartitle {width: 40px; height: 4px; background: #FFF; margin-bottom: 3%!important;}
+p {font-family: 'ProxLight'!important; color: #FFF!important;}
+.contentpage {margin-bottom: 3%!important;}
+/* Big btn */
+.bigbtn{height: 50px; line-height: 50px!important; background: #08090b!important; font-family: 'ProxBold'!important; font-size: 0.8em!important; text-transform: uppercase!important; letter-spacing: 1px;
+            border: 2px solid #28d244; width: 180px!important; text-align: center; border-radius: 50px; margin-top: 10px; display: block; color: #FFF!important}
+.bigbtn:hover {height: 50px; line-height: 50px!important; background: #08090b!important; font-family: 'ProxBold'!important; font-size: 0.8em!important; text-transform: uppercase!important; letter-spacing: 2px;
+            border: 2px solid #28d244; width: 180px!important; text-align: center; border-radius: 50px; margin-top: 10px; background: #28d244!important; display: block; color: #FFF!important}
+
+
+
+/* BODY */
+
+body {background: #16171b!important; width: 100%!important; max-width: 100%!important;}
+/*
+
+/* NAVIGATION */
+
+.contain-to-grid {height: 73px; background: #08090b!important; z-index: 999; position: fixed; top:0!important;}
+nav {height: 73px!important; background: #08090b!important;}
+nav ul {height: 73px; margin-top: 15px; background: #08090b!important;}
+nav ul li {height: 73px; background: #08090b!important;}
+/* Logo */
+.title-area img {margin-top: 15px;}
+/* Menu */
+.left {line-height: 73px!important;} 
+.left li a {height: 73px; line-height: 73px!important; background: #08090b!important; font-family: 'ProxBold'!important; font-size: 0.8em!important; text-transform: uppercase!important; letter-spacing: 2px;
+            -khtml-transition: 0.4s; -ie-transition: 0.4s; -o-transition: 0.4s; -moz-transition: 0.4s; -webkit-transition: 0.4s; transition: 0.4s;}
+.current-menu-item a {color: #28d244!important;}
+.left li a:hover {color: #28d244!important;}
+/* Boutique */
+.right li a {height: 50px; line-height: 50px!important; background: #08090b!important; font-family: 'ProxBold'!important; font-size: 0.8em!important; text-transform: uppercase!important; letter-spacing: 1px;
+            border: 2px solid #28d244; text-align: center; border-radius: 50px; margin-top: 10px;}
+.right li a:hover {height: 50px; line-height: 50px!important; background: #08090b!important; font-family: 'ProxBold'!important; font-size: 0.8em!important; text-transform: uppercase!important; letter-spacing: 2px;
+            border: 2px solid #28d244; text-align: center; border-radius: 50px; margin-top: 10px; background: #28d244!important;}
+.extbtn a, .extbtn, .extbtn:hover, .extbtn a:hover {width: 230px!important;}
+.shopbtn a, .shopbtn, .shopbtn:hover, .shopbtn a:hover {width: 150px!important; margin-left: 10px;}
+
+
+/* HEADER */
+
+.head {width: 100%; height: 150px; overflow: hidden; display: block; margin-top:73px!important;}
+.scene {width: 100%;}
+.scene ul {width: 100%;}
+.scene ul li {width: 100%;}
+.scene ul li img {display: block; margin: 0 auto;}
+.plan1 {padding-top: 50px;}
+.plan2 {padding-top: 50px;}
+
+/* SOCIAL */
+
+.social {width: 100%; height: 40px; background: #08090b; margin-bottom: 1.3%;}
+.social ul {text-align: center;}
+.social ul li {display: inline-block; line-height: 40px; margin-right: 3%; font-family: 'ProxLight'!important;}
+.social ul li:last-child {margin-right: 0;}
+.social ul li i {font-family: 'socicon'; margin-right: 5px; font-style: normal;}
+.social ul li a, .social ul li a:hover, .social ul li a:focus, .social ul li a:active {color: #FFF;}
+.fb {color: #3B5998;}
+.tw {color: #00ACED;}
+.yt {color: #CD332D;}
+.twi {color: #6441A5;}
+.sc {color: #FF6600;}
+
+/* INFOS */
+
+.infos {margin-bottom: 1.3%;}
+.infos .title img {float: left; margin-right: 10px;}
+.infos .title h1 {float: left; font-family: 'ProxLight'!important; font-size: 1.3em!important; color: #FFF; margin-top: -3px;}
+.infos .viewers {margin-top: -5px;}
+.infos .viewers img {float: left; margin-right: 10px;}
+.infos .viewers p {float: left; font-family: 'ProxLight'!important; font-size: 1em; color: #FFF; margin-top: 3px;}
+.infos .viewers p b {font-family: 'ProxBold'!important;}
+.infos .viewers .offline {color: #e73434;}
+.infos .cine {margin-top: -5px;}
+.infos .cine a {margin-top: -10px; display: block; float: right;}
+
+/* LIVE */
+
+.live {margin-bottom: 1.3%!important;}
+.player, .chat {width: 100%; height: 600px;}
+
+/* CINEMA */
+
+.theater {position: fixed; width: 100%!important; min-width: 100%!important; height: 100%; top: 0; left: 0; z-index: 999; background: #16171b;}
+.theater .row {width: 100%!important; max-width: 100%!important;}
+.theater .infos {position: fixed; width: 100%; height: 50px;}
+.theater .player {position: fixed; width: 75%; height: calc(100% - 50px); top: 50px;}
+.theater .chat {position: fixed; width: 25%; height: calc(100% - 50px); top: 50px; left: 75%;}
+.theater .infos .title {margin-top: 15px;}
+.theater .infos .viewers {margin-top: 12px;}
+.theater .infos .cine {margin-top: 12px;}
+.quittheater {display: none!important;}
+.theater .quittheater {display: inline-block!important;}
+.theater .entertheater {display: none!important;}
+
+/* BOUTONS LIVE */
+
+.btnlive {margin-bottom: 1.3%!important;}
+.btncont {height: 100px; background: #08090b; display: block;}
+.btncont:hover {opacity: 0.6;}
+.btns img {margin-top: 17px; float: left; margin-right: 25px; margin-left: 25px;}
+.btns h2 {font-family: 'ProxLight'!important; font-size: 1.7em; color: #FFF; text-transform: uppercase; padding-top: 22px;}
+.btns p {font-family: 'ProxLight'!important; font-size: 0.78em; color: #FFF; text-transform: uppercase; margin-top: -10px;}
+.btns p span {font-family: 'ProxBold'!important;}
+.don span {color: #c9a54e;}
+
+/* EVENTS */
+
+.barevent {width: 100%; height: 70px; background: #08090b;}
+.barevent h3 {line-height: 70px; margin-left: 10px;}
+.barevent a {float: right;}
+
+
+
+/* FOOTER */
+
+footer {margin-top: 5%!important;}
+footer .part {width: 100%; display: flex; justify-content:center; margin-bottom: 1.5%;}
+footer .razer {margin-right: 20px; margin-top: -10px;}
+footer p {text-align: center; font-family: 'ProxLight'!important; font-size: 0.8em; color: #FFF; margin-bottom: 3%!important;}
+
+
+
+
+
+
+
+/* COMMUNITY */
+
+.addgametitle h1 {text-align: left!important;}
+.askgame {margin-bottom: 3%!important; height: 50px;}
+.askgame a i {margin-right: 5px; font-size: 1.3em; color: #28d244; line-height: 50px;}
+.askgame a, .gallerybtn a:focus, .gallerybtn a:active {font-family: 'ProxLight'; font-size: 1.1em; color: #FFF; text-align: center!important; text-transform: uppercase; width: 100%; display: block;}
+.askgame a:hover {color: #28d244;}
+.commdisc p {text-align: center; display: block;}
+
+.searchcomm input {width: 100%; height: 70px!important; background: #08090b!important; border: none!important; font-family: 'ProxBold'!important; color: #FFF!important; font-size: 2em!important; 
+                padding-left: 1%!important; margin-bottom: 1.3%!important; z-index: 999!important;}
+
+::-webkit-input-placeholder {
+   color: #45484f!important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #45484f!important;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #45484f!important;  
+}
+
+:-ms-input-placeholder {  
+   color: #45484f!important;  
+}
+
+
+.onegame h2 {font-family: 'ProxLight'!important; font-size: 1em!important; color: #FFF!important; text-transform: uppercase; text-align: center;}
+.onegame .imgcomm {text-align: center;}
+.onegame img {max-width: 200px; margin-bottom: 20px!important; margin: 0 auto!important;}
+.gridder li  {cursor: pointer; margin-bottom: 5%!important; margin-right: 0!important;}
+.gridder-nav {display: none;}
+.gridder-show {background: #08090b; margin-top: -4%!important; padding: 20px;}
+.gridder-close, .gridder-close:hover {font-family: 'ProxLight'!important; color: #FFF!important; display: block; width: 70px; height: 30px; background: #28d244; text-align: center; text-transform: uppercase; line-height: 30px; border-radius: 3px; font-size: 0.8em!important; margin-bottom: 10px;}
+
+
+
+
+/* GALERIE */
+
+.gallery {margin-bottom: 3%!important;}
+.gallerybtn {margin-bottom: 3%!important; height: 50px;}
+.gallerybtn a i {margin-right: 5px; font-size: 1.3em; color: #28d244; line-height: 50px;}
+.gallerybtn a, .gallerybtn a:focus, .gallerybtn a:active {font-family: 'ProxLight'; font-size: 1.1em; color: #FFF; text-align: center!important; text-transform: uppercase; width: 100%; display: block;}
+.gallerybtn a:hover {color: #28d244;}
+.gallery .imggall img {width: 100%;}
+.gallery h2, .singlegall h1 {margin-top: -4px; font-family: 'ProxLight'; font-size: 1.5em; color: #28d244; text-transform: uppercase; font-weight: normal}
+.infogall {font-family: 'ProxLight'; font-size: 0.8em; color: #FFF; margin-top: -10px;}
+.infocrea {font-family: 'ProxLight'; font-size: 0.8em; color: #FFF; margin-top: -20px;}
+.textcrea p {font-family: 'ProxLight'; font-size: 1em; color: #565964!important;}
+.onegall {margin-bottom: 3%!important;}
+
+.singlegall h1, .singlegall p {text-align: center;}
+.singlegall img {margin: 0 auto 3% auto; display: block;}
+.singlegall .textcrea p {margin-bottom: 3%;}
+
+/* ENVOYER GALLERIE */
+
+.ap-form-wrapper h2 {display: none;}
+.ap-form-wrapper p, .ap-form-wrapper label, .ap-form-field, .ap-post-submission-message {font-family: 'ProxLight'; font-size: 0.9em; color: #FFF; font-weight: normal; text-align: left;}
+.ap-form-wrapper input[type="text"], .contact input[type="email"] {width: 100%; height: 40px!important; background: #08090b!important; border: none!important; font-family: 'ProxLight'!important; color: #FFF!important; font-size: 1em!important; 
+                padding-left: 1%!important;}
+.ap-form-wrapper textarea {width: 100%; height: 140px!important; background: #08090b!important; border: none!important; font-family: 'ProxLight'!important; color: #FFF!important; font-size: 1em!important; 
+                padding-left: 1%!important; padding-right: 1%!important;}
+.ap-form-wrapper input[type="submit"] {width: 100%; height: 46px!important; background: none!important; border: 2px solid #28d244!important; font-family: 'ProxLight'!important; color: #28d244!important; 
+                                font-size: 1em!important; text-align: center; text-transform: uppercase; margin-bottom: 3%!important; cursor: pointer;}
+.ap-form-wrapper input[type="submit"]:hover {width: 100%; height: 46px!important; background: #28d244!important; border: 2px solid #28d244!important; font-family: 'ProxBold'!important; color: #FFF!important; 
+                                font-size: 1em!important; text-align: center; text-transform: uppercase; margin-bottom: 3%!important; cursor: pointer; letter-spacing: 1px;
+                            -khtml-transition: 0.4s; -ie-transition: 0.4s; -o-transition: 0.4s; -moz-transition: 0.4s; -webkit-transition: 0.4s; transition: 0.4s;}
+.ap-post-submission-message {color: #28d244;}
+
+
+/* CONTACT */
+
+.contact h1 {font-family: 'ProxLight'; font-size: 1.5em; color: #FFF; font-weight: normal; text-align: center;}
+.contact p {font-family: 'ProxLight'; font-size: 0.9em; color: #FFF; font-weight: normal; text-align: center;}
+.contact input[type="text"], .contact input[type="email"], .contact select {width: 100%; height: 40px!important; background: #08090b!important; border: none!important; font-family: 'ProxLight'!important; color: #FFF!important; font-size: 1em!important; 
+                padding-left: 1%!important;}
+.contact textarea {width: 100%; height: 140px!important; background: #08090b!important; border: none!important; font-family: 'ProxLight'!important; color: #FFF!important; font-size: 1em!important; 
+                padding-left: 1%!important; padding-right: 1%!important;}
+.contact input[type="submit"] {width: 100%; height: 46px!important; background: none!important; border: 2px solid #28d244!important; font-family: 'ProxLight'!important; color: #28d244!important; 
+                                font-size: 1em!important; text-align: center; text-transform: uppercase; margin-bottom: 3%!important; cursor: pointer;}
+.contact input[type="submit"]:hover {width: 100%; height: 46px!important; background: #28d244!important; border: 2px solid #28d244!important; font-family: 'ProxBold'!important; color: #FFF!important; 
+                                font-size: 1em!important; text-align: center; text-transform: uppercase; margin-bottom: 3%!important; cursor: pointer; letter-spacing: 1px;
+                            -khtml-transition: 0.4s; -ie-transition: 0.4s; -o-transition: 0.4s; -moz-transition: 0.4s; -webkit-transition: 0.4s; transition: 0.4s;}
+
+/* CONTACT PAGE */
+
+.contactpage {text-align: center;}
+.contactpagebtn {width: 380px!important; margin: 0 auto!important;}
+.yescontact, .yescontact:hover {float: left; margin-right: 20px;}
+.nocontact {float: left;}
+.contactchat iframe {margin-top: 2%!important; display: none;}
+.appchat iframe {display: block!important; }
+.contactchat h3 {display: none; margin-top: 4%!important;}
+.appchat h3 {display: block!important;}
+
+
+/* EXTENSION */
+
+.ext {margin-top: 3%!important;}
+.ext img {display: block; width: 30%; margin: 0 auto; margin-bottom: 2%!important;}
+.ext h2 {font-family: 'ProxLight'!important; font-size: 1.5em!important; color: #FFF; text-transform: uppercase; text-align: center;}
+.extbloc:hover {opacity: 0.5;}
+.exttitle h1 {font-family: 'ProxLight'!important; text-align: center;}
+
+/* SHOP */
+
+.barshop {width: 100%; height: 70px; background: #08090b; margin-bottom: 3%!important;}
+.barshop h3 {line-height: 70px; text-align: center;}
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 1025px) and (max-width: 1400px) {
+
+    .global {width:90% !important; max-width: 95%!important;} 
+    .player, .chat {height: 450px;}
+    .btns h2 {font-family: 'ProxLight'!important; font-size: 1.7em; color: #FFF; text-transform: uppercase; padding-top: 15px;}
+    .barevent h3 {font-size: 1em!important;}
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .global {width:95% !important; max-width: 95%!important;} 
+    .cine {display: none!important;}
+    .gallerybtn .columns:last-child {display: block; margin-bottom: 3%!important;}
+    .gallery img {margin-bottom: 3%!important;}
+    .extbtn {display: none!important;}
+
+    /* EVENTS */
+
+    .eventlive {margin-bottom: 5%!important;}
+    .barevent {width: 100%; height: 190px; background: #08090b;}
+    .barevent h3 {line-height: 50px; margin-left: 10px; font-size: 1.3em; text-align: center}
+    .barevent a, .barevent a:hover {float: none; width: 100%!important}
+
+}
+
+@media screen and (max-width: 634px) {
+
+    .social {width: 100%; height: 80px; background: #08090b; margin-bottom: 1.3%;}
+    .player, .chat {width: 100%; height: 300px;}
+    .infos .title img {float: left; margin-right: 10px;}
+    .infos .title h1 {float: none; font-family: 'ProxLight'!important; font-size: 1.5em; color: #FFF; margin-top: -5px;}
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+    .contain-to-grid {background: #08090b!important; z-index: 999; width: 100%!important; max-width: 100%!important;}
+    nav {height: 73px!important; background: #08090b!important; z-index: 999; width: 100%!important; max-width: 100%!important;}
+    nav.expanded {height: auto!important; z-index: 999; width: 100%!important; max-width: 100%!important;}
+    nav ul {height: 73px; background: #08090b!important; width: 100%!important; max-width: 100%!important;}
+    nav ul li {height: 50px; background: #08090b!important;}
+    .left li a {height: 50px; line-height: 50px!important;}
+    /* Boutique */
+    .right li , .right li:hover, .right li:focus {width: 80%!important; margin: 0 auto;}
+    .right li a, .right li a:hover, .right li a:focus {height: 50px; line-height: inherit!important; background: #08090b!important; font-family: 'ProxBold'!important; font-size: 0.8em!important; text-transform: uppercase!important; letter-spacing: 1px;
+                border: 2px solid #28d244; width: 100%!important; min-width: 100%!important; text-align: center; border-radius: 50px; margin-top: 10px;}
+    .barevent {width: 100%; height: 230px; background: #08090b;}
+
+    .contactpage {text-align: center;}
+    .contactpagebtn {width: 100%!important; margin: 0 auto!important;}
+    .contactpagebtn a, .contactpagebtn a:hover {width: 100%!important;}
+    .yescontact, .yescontact:hover {float: none; margin-right: 0px;}
+    .nocontact {float: none;}
+    .contactchat iframe {margin-top: 2%!important; display: none;}
+    .appchat iframe {display: block!important; }
+    .contactchat h3 {display: none; margin-top: 4%!important;}
+    .appchat h3 {display: block!important;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BOUTIQUE */
+
+.customHighlight, .label {background: #28d244!important; border-color: #28d244!important;}
+.customHighlight:hover, .label:hover {padding: 0.25rem 0.5rem 0.25rem!important; color: #FFF!important;}
+.customHeader {background: #08090b!important; border: none!important;}
+.SprdMain .SprdHeader .navigation {border: none!important;}
+.customPageBackground {background: #16171b!important;}
+.productName, .price {background: none!important; font-family: 'ProxLight'!important;}
+.productName {font-size: 0.9em!important;}
+.image {margin-bottom: 10px!important;}
+.filterBar {background: #16171b!important;}

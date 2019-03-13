@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+
+<script type="text/javascript">
+function adjustIFrameSize (iframeWindow) {
+  if (iframeWindow.document.height) {
+    var iframeElement = document.getElementById
+(iframeWindow.name);
+    iframeElement.style.height = iframeWindow.document.height + 'px';
+    iframeElement.style.width = iframeWindow.document.width + 'px';
+  }
+  else if (document.all) {
+    var iframeElement = document.all[iframeWindow.name];
+    if (iframeWindow.document.compatMode &&
+        iframeWindow.document.compatMode != 'BackCompat') 
+    {
+      iframeElement.style.height = 
+iframeWindow.document.documentElement.scrollHeight + 5 + 'px';
+      iframeElement.style.width = 
+iframeWindow.document.documentElement.scrollWidth + 5 + 'px';
+    }
+    else {
+      iframeElement.style.height = 
+iframeWindow.document.body.scrollHeight + 5 + 'px';
+      iframeElement.style.width = 
+iframeWindow.document.body.scrollWidth + 5 + 'px';
+    }
+  }
+}
+</script>
+
+<script src="js/iframeResizer.js" type="text/javascript"></script>
+<script src="js/iframeResizer.min.js" type="text/javascript"></script>
+<script src="js/iframeResizer.contentWindow.min.js" type="text/javascript"></script>
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="stylesheet" href="css/stream.css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psyko Stream</title>
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/hover.css">
+</head>
+<body onload="if (parent.adjustIFrameSize)
+                parent.adjustIFrameSize(window);" >               
+<ul class="nav nav-tabs" style="align-item:center">       
+  <li role="presentation"><a href="index.html" class=" animated hvr-bounce-to-bottom " >Home</a></li>
+  <li role="presentation"><a href="http://www.twitch.tv/psyko_live" class=" animated hvr-bounce-to-bottom " >Twitch Psyko</a></li>
+  <li role="presentation"><a href="http://www.twitch.tv/thewinlo31" class=" animated hvr-bounce-to-bottom " >Twitch TheWinlo</a></li>
+</ul>
+
+
+
+ <section align="center"> 
+       <h1><a href="http://twitch.tv/psyko_live"><img src="http://streambadge.com/twitch/dark/psyko_live.png" width="300" height="64" alt="psyko_live's Streambadge"></a></h1>
+    </section>
+    <section>
+    
+        <div class="stream" align="center">
+            <object type="application/x-shockwave-flash" height="720" width="70%" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=psyko_live"
+            bgcolor="#000000">            
+                <param name="allowFullScreen" value="true" />
+                <param name="allowScriptAccess" value="always" />
+                <param name="allowNetworking" value="all" />
+                <param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" class="auto-height"/>
+                <param name="flashvars" value="hostname=www.twitch.tv&channel=psyko_live&auto_play=true&start_volume=25"/>
+            </object>
+
+            <iframe frameborder="0" scrolling="auto" src="http://twitch.tv/psyko_live/chat?popout="  height="720" width="20%">
+            </iframe>
+        </div>
+    </section>
+    
+    
+ <section align="center">
+        <h1><a href="http://twitch.tv/thewinlo31"><img src="http://streambadge.com/twitch/dark/thewinlo31.png" width="300" height="64" alt="thewinlo31's Streambadge"></a></h1>
+        
+    </section>
+    <section>
+        <div class="stream1" align="center">
+            <object type="application/x-shockwave-flash" height="720" width="70%" id="live_embed_player_flash1" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=thewinlo31"
+            bgcolor="#000000">
+                <param name="allowFullScreen" value="true" />
+                <param name="allowScriptAccess" value="always" />
+                <param name="allowNetworking" value="all" />
+                <param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" />
+                <param name="flashvars" value="hostname=www.twitch.tv&channel=thewinlo31&auto_play=true&start_volume=25" />
+            </object>
+
+            <iframe frameborder="0" scrolling="no" src="http://twitch.tv/thewinlo31/chat?popout="  height="720" width="20%">
+            </iframe>
+        </div>
+    </section>
+ 
+
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <script type="text/javascript">
+function adjustIFrameSize (iframeWindow) {
+  if (iframeWindow.document.height) {
+    var iframeElement = document.getElementById
+(iframeWindow.name);
+    iframeElement.style.height = iframeWindow.document.height + 'px';
+    iframeElement.style.width = iframeWindow.document.width + 'px';
+  }
+  else if (document.all) {
+    var iframeElement = document.all[iframeWindow.name];
+    if (iframeWindow.document.compatMode &&
+        iframeWindow.document.compatMode != 'BackCompat') 
+    {
+      iframeElement.style.height = 
+iframeWindow.document.documentElement.scrollHeight + 5 + 'px';
+      iframeElement.style.width = 
+iframeWindow.document.documentElement.scrollWidth + 5 + 'px';
+    }
+    else {
+      iframeElement.style.height = 
+iframeWindow.document.body.scrollHeight + 5 + 'px';
+      iframeElement.style.width = 
+iframeWindow.document.body.scrollWidth + 5 + 'px';
+    }
+  }
+}
+</script>
+		<title>Stream</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assetsstream/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assetsstream/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assetsstream/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assetsstream/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assetsstream/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-loading-0 is-loading-1 is-loading-2">
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Stream</h1>
+						<p>Nos stream</p>
+						<ul class="icons">
+							<li><a href="index.html" class="icon fa-home"><span class="label">Home</span></a>Home</li>
+							<li><a target="_blank" href="https://www.twitch.tv/psyko_live" class="icon fa-twitch"><span class="label">Twitch Psyko</span></a>Psyko</li>
+							<li><a target="_blank" href="https://www.twitch.tv/thewinlo31" class="icon fa-twitch"><span class="label">Twitch TheWinlo</span></a>TheWinlo</li>
+							
+						</ul>
+                        
+					</header>
+                    
+
+				<!-- Thumbnail -->
+					<section id="thumbnails">
+						<article>
+                        <a class="thumbnail" href="imagesstream/fulls/08.jpg"><img src="imagesstream/thumbs/08.jpg" alt="" /></a>
+							    <section>
+    
+        <div class="stream" align="center">
+            <object type="application/x-shockwave-flash" height="800" width="70%" id="live_embed_player_flash" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=psyko_live"
+            bgcolor="#000000">            
+                <param name="allowFullScreen" value="true" />
+                <param name="allowScriptAccess" value="always" />
+                <param name="allowNetworking" value="all" />
+                <param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" class="auto-height"/>
+                <param name="flashvars" value="hostname=www.twitch.tv&channel=psyko_live&auto_play=true&start_volume=50"/>
+            </object>
+
+            <iframe frameborder="0" scrolling="auto" src="http://twitch.tv/psyko_live/chat?popout="  height="800" width="20%">
+            </iframe>
+        </div>
+    </section>
+    <h2>Stream de Psyko</h2>
+						</article>
+                        <article>
+                        <a class="thumbnail" href="imagesstream/fulls/02.jpg"><img src="imagesstream/thumbs/02.jpg" alt="" /></a>
+    <section>
+        <div class="stream1" align="center">
+            <object type="application/x-shockwave-flash" height="800" width="70%" id="live_embed_player_flash1" data="http://www.twitch.tv/widgets/live_embed_player.swf?channel=thewinlo31"
+            bgcolor="#000000">
+                <param name="allowFullScreen" value="true" />
+                <param name="allowScriptAccess" value="always" />
+                <param name="allowNetworking" value="all" />
+                <param name="movie" value="http://www.twitch.tv/widgets/live_embed_player.swf" />
+                <param name="flashvars" value="hostname=www.twitch.tv&channel=thewinlo31&auto_play=true&start_volume=50" />
+            </object>
+
+            <iframe frameborder="0" scrolling="no" src="http://twitch.tv/thewinlo31/chat?popout="  height="800" width="20%">
+            </iframe>
+        </div>
+    </section>
+    <h2>Stream de The Winlo</h2>
+    					</article>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Psyko.</li><li>Design: <a href="http://designscrazed.org/">HTML5</a>.</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assetsstream/js/jquery.min.js"></script>
+			<script src="assetsstream/js/skel.min.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assetsstream/js/main.js"></script>
+            <script src="assetsstream/js/iframeResizer.js" type="text/javascript"></script>
+            <script src="assetsstream/js/iframeResizer.min.js" type="text/javascript"></script>
+            <script src="assetsstream/js/iframeResizer.contentWindow.min.js" type="text/javascript"></script>
+
+	</body>
+</html>

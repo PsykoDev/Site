@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="AdminHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="AdminSetVerboseLog.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="BanHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="CardcastAddCardsetHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="CardcastListCardsetsHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="CardcastRemoveCardsetHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="ChangeGameOptionHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="ChatHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="CreateGameHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="FirstLoadHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="GameChatHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="GameHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="GameListHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="GameWithPlayerHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="GetCardsHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="GetGameInfoHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="Handler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="Handlers.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="JoinGameHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="JudgeSelectHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="KickHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="LeaveGameHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="LogoutHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="NamesHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="PlayCardHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="RegisterHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="ScoreHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="SpectateGameHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="StartGameHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+<file name="StopGameHandler.java" server="psyko.me//public_html/" local="131041888620000000" remote="131146740000000000" Dst="2" />
+</dwsync>

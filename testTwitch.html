@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from twitchtheater.tv/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Aug 2016 14:29:50 GMT -->
+<head>
+<title>TwitchTheater.tv</title>
+<meta name="description" content="TwitchTheater.tv will allow you to watch multiple Twitch.tv streams on Theater mode, and with many extra features, like chat on left side, chat switcher, stream hiding, session saving, the ability to move stream positions, and much more.">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="theater.js"></script>
+<script src="../player.twitch.tv/js/embed/v1.js"></script>
+</head>
+<body onresize="updlayout();maxmenuz()">
+
+<div id="chatdiv" style="right:0px">
+<div id="chatnav"><img src="img/prv.png" alt="" title="Previous chat" onclick="nextcht(-1)"><select id="chatsel" onchange="chgchat();sharelnk()"></select><img src="img/nxt.png" alt="" title="Next chat" onclick="nextcht(1)"></div>
+<div id="menudiv" style="right:0px">
+<img src="img/menu.png" alt="" style="position:absolute;right:0px" onclick="showmenu()">
+<div id="menubox" style="width:340px;display:none">
+<div id="menutop">
+<span style="color:#00B8F5">Theater settings: </span><sup>v16 Beta</sup>
+</div>
+
+<div id="menubot">
+<div id="hlsmode" style="display:none">Mobile/HTML5 mode is on (see the FAQ)</div>
+<div id="backbtn" class="submbtn" style="display:none" onclick="chgmenu()">Go back</div>
+<div id="maindiv" style="display:none">
+Streams: (<span id="strnum">0</span>/8)<img src="img/ply.png" alt="" title="Play all streams" onclick="ctrlchk(event);playpause(1)"><img src="img/pau.png" alt="" title="Pause all streams" onclick="ctrlchk(event);playpause()"><img src="img/aud.png" alt="" title="Unmute all streams" onclick="ctrlchk(event);chgaudio()"><img src="img/mut.png" alt="" title="Mute all streams" onclick="ctrlchk(event);chgaudio(-1)"><img src="img/bgs.png" alt="" title="Swap visibility states" onclick="ctrlchk(event);swapbgstr()"><img src="img/fsc.png" alt="" title="Fullscreen mode" onclick="ctrlchk(event);fullscr()">
+<div id="strflds"><div id="more" onclick="mrestropt(this)">more</div></div>
+<div class="inpdiv" id="addstr"><input type="text" id="strtxt" onkeydown="if (event.keyCode == 13 || event.keyCode == 10) {ctrlchk(event);addstream(event.shiftKey)}"><img src="img/add2.png" alt="" title="Add with chat" onclick="ctrlchk(event);addstream(false)"><img src="img/add.png" alt="" title="Add without chat" onclick="ctrlchk(event);addstream(true)"></div>
+<br>
+
+Chats: (<span id="chtnum">0</span>)<img src="img/hid.png" alt="" title="Hide/show chat" onclick="ctrlchk(event);showchat();updlayout()">
+<div class="inpdiv" id="chtfld" style="display:none"><select id="chatmen"></select><img src="img/str.png" alt="" title="Load this stream" onclick="ctrlchk(event);shostream()"><img src="img/rel.png" alt="" title="Reload chat" onclick="ctrlchk(event);relchat()"><img src="img/rem.png" alt="" title="Remove chat" onclick="ctrlchk(event);popchat()"></div>
+<div class="inpdiv"><input type="text" id="chttxt" onkeydown="if (event.keyCode == 13 || event.keyCode == 10) {ctrlchk(event);addchat()}"><img src="img/add.png" alt="" title="Add chat" onclick="ctrlchk(event);addchat()"></div>
+<br>
+
+Link for this setup:
+<div id="shrlnk"><a></a></div><br>
+
+<div class="submbtn" style="float:left" onclick="chgmenu('opsdiv')">More options</div>
+<div class="submbtn" style="float:left" onclick="chgmenu('legdiv')">Legend</div>
+<div class="submbtn" style="float:left" onclick="chgmenu('faqdiv')">FAQ</div>
+<div class="submbtn" style="float:left" onclick="chgmenu('abtdiv')">About</div>
+</div>
+
+<div id="opsdiv" class="submenu" style="display:none">
+These will be saved to your browser's cookies.<br><br>
+<input type="checkbox" id="lc" onclick="chttoleft()"><label for="lc">Move chat to left side</label><br><br>
+<input type="checkbox" id="pc" onclick="chgCookie(this,'autochat')"><label for="pc">Always preload new chats</label><br><br>
+<input type="checkbox" id="sc" onclick="chgCookie(this,'switchat')"><label for="sc">Auto-switch chat when adding a stream</label><br><br>
+<input type="checkbox" id="ac" onclick="chgCookie(this,'audichat')"><label for="ac">Also switch chat when switching audio</label><br><br>
+<input type="checkbox" id="sl" onclick="chgCookie(this,'setuplnk');sharelnk()"><label for="sl">Generate more specific setup links</label><br><br>
+<input type="checkbox" id="ss" onclick="sharelnk()"><label for="ss">Disable session saving</label><br><br>
+<input type="checkbox" id="vo" onclick="togvolval(this)"><label for="vo">Default player volume level:</label> <input type="text" id="volval" style="width:25px" onfocus="this.select()" onkeyup="document.getElementById('vo').checked = true" onblur="setvolval(this)"> %<br><br>
+<input type="checkbox" id="h5" onclick="chgCookie(this,'html5ply',true)"><label for="h5">Use the new Twitch player (experimental)</label><br>
+<input type="checkbox" id="f5" onclick="chgCookie(this,'forceh5p')" style="margin-left:20px"><label for="f5">Force HTML5 playback</label><br><br>
+Change all qualities to:
+<select id="videoq" onchange="changeq()">
+<option selected disabled>-- select one --</option>
+<option>Source</option>
+<option>High</option>
+<option>Medium</option>
+<option>Low</option>
+<option>Mobile</option>
+</select><br>
+(^ this is a bit buggy at the moment)<br><br>
+Menu color:
+<select id="themsel" onchange="chgtheme()">
+<option value="#191134">Twicherino</option>
+<option value="#000000">Original Black</option>
+<option value="#444444">Silver</option>
+<option value="#2B182E">Grape</option>
+<option value="#172C2E">Camo</option>
+<option value="#112233">Jolly Roger Bay</option>
+<option value="#B60353">HeyGuys</option>
+<option value="c">Custom</option>
+</select>
+</div>
+
+<div id="legdiv" class="submenu" style="display:none">
+<img src="img/add2.png" alt=""> Add stream with chat<br>
+<img src="img/rem2.png" alt=""> Remove stream with chat<br>
+<img src="img/add.png" alt=""> Add stream only / chat only<br>
+<img src="img/rem.png" alt=""> Remove stream only / chat only<br>
+<img src="img/rel.png" alt=""> Reload stream only / chat only<br>
+<img src="img/ply.png" alt=""> Play all paused streams<br>
+<img src="img/pau.png" alt=""> Pause all streams<br>
+<img src="img/aud.png" alt=""> Listen from here only / from all<br>
+<img src="img/mut.png" alt=""> Mute all streams<br>
+<img src="img/cht.png" alt=""> Show channel chat<br>
+<img src="img/str.png" alt=""> Show channel stream<br>
+<img src="img/bgs.png" alt=""> Hide/show stream / swap all states<br>
+<img src="img/mup.png" alt=""> Move stream position up<br>
+<img src="img/pro.png" alt=""> Open channel profile (to follow, sub, etc)<br>
+<img src="img/fsc.png" alt=""> Enter/exit fullscreen mode<br>
+<img src="img/hid.png" alt=""> Hide/show chat sidebar
+</div>
+
+<div id="faqdiv" class="submenu" style="display:none">
+- Keyboard shortcuts?<br>
+F11 to fullscreen with chat.<br>
+Shift-Enter to add a stream without chat.<br>
+Ctrl to auto-close the menu after an action<br>
+(like adding a stream or using the controls).
+<br><br>
+- How do I select the link for my setup?<br>
+Right-click it and select "Copy link address / location / shortcut".
+On mobile, tap and hold to get the menu.
+<br><br>
+- Can I add multiple channels at once?<br>
+Yes! Just separate them by spaces, comas, dashes or forwardslashes.
+You can also use links from other multitwitch services and it will add the streams and/or chats for you!
+(suported services are the ones that separate the channel names by forwardslash). Please tell me if a specific link is not working.
+<br><br>
+- Can I use Twitch links as channel names?<br>
+Yes! Feel free to copy-paste them from chat!
+<br><br>
+- Stream hosting not working?<br>
+You have to add the stream that is being hosted. You can use the chat of your choosing though.
+<br><br>
+- Mobile/HTML5 mode?<br>
+When on mobile devices or when Flash Player is not found the site will fall back into HTML5 mode.
+This mode is experimental and some features dont yet fully work.
+If you are on a desktop/laptop you should install Flash Player from Adobe.
+Some of the features that dont yet fully work are viewer count and stream autoplay on mobile.
+<br><br>
+- Supported mobile devices/browsers?<br>
+Support varies. Chrome on Android seems to work just fine. Safari on iOS can only play one stream at a time.
+Keep in mind that this technology is evolving, so expect more and better support in the future.
+I will post any news I get on my <a target="_blank" href="http://twitter.com/metaljhacker">twitter</a>.
+<br><br>
+- Fullscreen looks small on my device.<br>
+I will try to work this around on a future patch.
+<br><br>
+- Clicking on streams navigates away?<br>
+Try using the new twitch player (in the "more options" menu). This is just something that the old flash player does when its embedded on other sites.
+<br><br>
+- TwitchTheater.tv link format?<br>
+Add the stream names after the website address, separated by forwardslashes.
+To specify the chats to load, just add a "/c/" at the end of the URL
+and then add the chat names after that (also separated by forwardslashes).
+If the chat parameter is omitted, then the site will add chats based on the stream names.
+Use an empty chat parameter to prevent chats from getting added.
+You can also use an empty chat parameter (without stream names) to prevent session saving from loading.
+<br><br>
+- How does session saving work?<br>
+It will store your streams and chats every time you add one and then restore them next time you open/reload the page.
+On TwitchTheater.tv links, it will load the streams/chats from the link instead (and will store them).
+<br><br>
+- Custom menu color?<br>
+Search Google for an "online color picker", generate the color of your choice,
+then copy the color code with a format like: #1a2b3c (with or without the hashtag).
+It is sometimes labeled as an RGB or an HTML color code.
+</div>
+
+<div id="abtdiv" class="submenu" style="display:none">
+TwitchTheater.tv will allow you to watch multiple Twitch.tv streams on Theater mode, and with many extra features, like chat on left side, chat switcher,
+stream hiding, session saving, the ability to move stream positions, and much more. This website was made for the whole Twitch comunity to enjoy, so I really hope you do! ;-)
+<br><br>
+Please send any issues/comments/suggestions to my twitch or my twitter (links located below).
+<br><br>
+Website created by: Luis Figueroa (<a target="_blank" href="http://www.twitch.tv/message/compose?to=metalj">MetalJ</a>)<br>
+My twitter: <a target="_blank" href="http://twitter.com/metaljhacker">@metaljhacker</a><br>
+Website powered by: <a target="_blank" href="http://www.biz.nf/?aid=MTkyMzI2MjUyNzI3MjQ=">biz.nf</a><br>
+Help support server costs:
+<form style="display:inline" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_donations">
+<input type="hidden" name="business" value="6664SHMU62FML">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="item_name" value="TwitchTheater.tv">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest">
+<input type="image" style="border:0" src="../www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img style="border:0;width:1px;height:1px" alt="" src="https://ak1s.abmr.net/is/www.paypalobjects.com?U=/en_US/i/scr/pixel.gif&amp;V=3-siDlyTLkUm66K1sUENCd+MqdVHqDjDG23j6OApCdsFxJZ2JQgLTsiJXtNJ90HvSQ&amp;I=A38E3C6A803E924&amp;D=paypalobjects.com&amp;01AD=1&amp;">
+</form>
+</div>
+</div>
+
+</div></div></div>
+<div id="playdiv"></div>
+<script>start(16)</script>
+</body>
+
+<!-- Mirrored from twitchtheater.tv/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Aug 2016 14:29:56 GMT -->
+</html>

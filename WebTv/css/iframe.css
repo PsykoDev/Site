@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+          video {
+            max-width: 100%;
+            height: auto;
+          }
+
+          iframe,
+          embed,
+          object {
+            max-width: 100%;
+          }
+
+          .row1 {
+            width: 100%;
+            padding: 5%;
+            margin:0px auto;
+            background:#000;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+          }
+
+          .vendor {
+            padding: 2%;
+            background: #d1eed1;
+            margin-bottom: 2em;
+          }
+
+          .unsupported {
+            background: #fddfde;
+          }

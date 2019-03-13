@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteRule ^http://psyko.me/DrBlood.html$ http://psyko.me/DrBlood01.html [R=301,L]
+Options -Indexes
+
+ErrorDocument 404 http://psyko.me/404/404.html

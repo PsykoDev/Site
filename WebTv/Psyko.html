@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+
+    <script type="text/javascript">
+function adjustIFrameSize (iframeWindow) {
+  if (iframeWindow.document.height) {
+    var iframeElement = document.getElementById
+(iframeWindow.name);
+    iframeElement.style.height = iframeWindow.document.height + 'px';
+    iframeElement.style.width = iframeWindow.document.width + 'px';
+  }
+  else if (document.all) {
+    var iframeElement = document.all[iframeWindow.name];
+    if (iframeWindow.document.compatMode &&
+        iframeWindow.document.compatMode != 'BackCompat') 
+    {
+      iframeElement.style.height = 
+iframeWindow.document.documentElement.scrollHeight + 5 + 'px';
+      iframeElement.style.width = 
+iframeWindow.document.documentElement.scrollWidth + 5 + 'px';
+    }
+    else {
+      iframeElement.style.height = 
+iframeWindow.document.body.scrollHeight + 5 + 'px';
+      iframeElement.style.width = 
+iframeWindow.document.body.scrollWidth + 5 + 'px';
+    }
+  }
+}
+</script>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+    <link rel="icon" type="image/png" href="img/icon.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WebTv</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet"> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- animatedresponsiveImagegrid  -->
+	<link rel="stylesheet" href="css/animatedresponsiveImagegrid.css">
+	<!-- Magnifoc Popup  -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/iframe.css">
+    
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<nav id="fh5co-main-nav" role="navigation">
+		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle active"><i></i></a>
+		<div class="js-fullheight fh5co-table">
+			<div class="fh5co-table-cell js-fullheight">
+				<ul>
+                <nav>
+					<li><a href="http://psyko.me">Home</a></li>
+					<li><a href="#jeu">Nos Jeux</a></li>
+					<li><a href="#stream">Nos Stream</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+                    </nav>
+				</ul>
+			</div>
+		</div>
+	</nav>
+		<header>
+			<div class="container">
+				<div class="fh5co-navbar-brand">
+					<h1 class="text-center"><a class="fh5co-logo" style="border:hsla(0,0%,0%,1.00)" href=""><i class="icon-twitch"></i></a>Web Tv Perso</h1>
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i>Menu</i></a>
+				</div>
+			</div>
+		</header>
+		<div id="fh5co-intro-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 animate-box text-center">
+						<h2 class="intro-heading">Liens utiles </h2>
+						<p><span class="icon-twitch" >Twitch / <a href="https://www.twitch.tv/nilamtv" target="_blank">NilamTv</a> , <a href="https://www.twitch.tv/striikous" target="_blank">Striikous</a> , <a href="https://www.twitch.tv/bestp442013" target="_blank">Bestp442013</a> , <a href="https://www.twitch.tv/psyko_live" target="_blank">Psyko_live</a> , <a href="https://www.twitch.tv/mrkiwixx" target="_blank">MrKiwixx</a></span>
+                        
+                        </p>
+					<span class="icon-twitter2" >Twitter / <a href="https://twitter.com/NilamGaming" target="_blank">NilamTv</a> , <a href="https://twitter.com/StrikousOficiel" target="_blank">Striikous</a> , <a href="https://twitter.com/bestp44" target="_blank">Bestp442013</a> , <a href="https://twitter.com/sp3culoOs" target="_blank">Psyko_live</a></span>					</div>
+				</div>
+			</div>
+		</div>
+        <section id="jeu">
+		<div id="fh5co-photos-section">
+			<div class="container">
+            <h1 class="intro text-center">Nos Jeux </h1>
+				<div id="ri-grid" class="ri-grid animate-box">
+					<img class="ri-loading-image" src="images/loading.gif" alt=""/>
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/pic1.jpg" alt=""/>
+								<div class="desc">
+									<h3>Rocket League<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic2.jpg" alt=""/>
+								<div class="desc">
+									<h3>Black ops 1 Zombie<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic3.png" alt=""/>
+								<div class="desc">
+									<h3>Osu!<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic4.jpg" alt=""/>
+								<div class="desc">
+									<h3>League of Legends<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic5.jpg" alt=""/>
+								<div class="desc">
+									<h3>GTA5<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic6.jpg" alt=""/>
+								<div class="desc">
+									<h3>OverWatch<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic7.jpg" alt=""/>
+								<div class="desc">
+									<h3>DBD<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic8.jpg" alt=""/>
+								<div class="desc">
+									<h3>Super Meat Boy<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic9.jpg" alt=""/>
+								<div class="desc">
+									<h3>Bioshock<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic10.jpg" alt=""/>
+								<div class="desc">
+									<h3>Combat Arms<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic11.jpg" alt=""/>
+								<div class="desc">
+									<h3>L4D2<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic12.png" alt=""/>
+								<div class="desc">
+									<h3>The Witcher<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic13.jpg" alt=""/>
+								<div class="desc">
+									<h3>Payday 2<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic14.jpg" alt=""/>
+								<div class="desc">
+									<h3>Mirror's Edge<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic15.jpg" alt=""/>
+								<div class="desc">
+									<h3>SubNautica<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic16.jpg" alt=""/>
+								<div class="desc">
+									<h3>CS:GO<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic17.jpg" alt=""/>
+								<div class="desc">
+									<h3>Alien Isolation<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic18.jpg" alt=""/>
+								<div class="desc">
+									<h3>Fear<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic19.jpg" alt=""/>
+								<div class="desc">
+									<h3>Battlefield 4<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic20.jpg" alt=""/>
+								<div class="desc">
+									<h3>Portal 2<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic21.png" alt=""/>
+								<div class="desc">
+									<h3>Skyrim<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic22.jpg" alt=""/>
+								<div class="desc">
+									<h3>Sniper Elite<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic23.png" alt=""/>
+								<div class="desc">
+									<h3>Brawlhalla<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<img src="images/pic24.jpg" alt=""/>
+								<div class="desc">
+									<h3>Slender<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+                        <li>
+							<a href="#">
+								<img src="images/pic25.jpg" alt=""/>
+								<div class="desc">
+									<h3>Mafia<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+                        <li>
+							<a href="#">
+								<img src="images/pic26.jpg" alt=""/>
+								<div class="desc">
+									<h3>Saints Row 4<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+                        <li>
+							<a href="#">
+								<img src="images/pic27.jpg" alt=""/>
+								<div class="desc">
+									<h3>FarCry 4<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+                        <li>
+							<a href="#">
+								<img src="images/pic28.jpg" alt=""/>
+								<div class="desc">
+									<h3>Burnout Paradise<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+                        <li>
+							<a href="#">
+								<img src="images/pic29.jpg" alt=""/>
+								<div class="desc">
+									<h3>The Evil Within<br><span></span></h3>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+        </section>
+        
+		<div id="fh5co-services-section">
+			<div >
+            <section id="stream">
+            
+			  <div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center animate-box ">
+						<div class="heading-section">
+							<h2>Les Streams<br><span><a href="JavaScript: location.reload(true);">Un Lag ? bah clique sur moi</a></span></h2>   
+
+                           
+                           <form method="post" action="http://psyko.me/WebTv/redirection_navigation.php">
+<p>
+<!-- une balise select ou input ne peut pas être imbriquée directement dans form -->
+     <select name="menu_destination" onchange="document.location = this.options[this.selectedIndex].value;">
+          <option value="http://psyko.me/WebTv/WebTv.html">Tous</option>
+          <option value="http://psyko.me/WebTv/Nilam.html">NilamTv</option>
+          <option value="http://psyko.me/WebTv/Striikous.html">Striikous</option>
+          <option value="http://psyko.me/WebTv/Bestp44.html">Bestp44</option>
+          <option selected value="http://psyko.me/WebTv/Psyko.html">Psyko</option>
+          <option value="http://psyko.me/WebTv/MrKiwixx.html">MrKiwixx</option>
+          <option value="http://psyko.me/WebTv/Dark.html">DarkWeed</option>
+     </select>
+</p>
+</form>
+
+                                                  
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					  <div class="stream text-center">
+					    <iframe src="https://player.twitch.tv/?channel=psyko_live&auto_play=true&start_volume=20" allowfullscreen="true" frameborder="1" scrolling="no" height="720" width="65%"></iframe>
+                        <iframe src="https://www.twitch.tv/psyko_live/chat?popout=" frameborder="0" scrolling="no" height="718" align="top" width="20%"></iframe>
+
+				 		</div>
+
+
+				  </div>
+                  </section>	
+              </div>
+          </div>
+		<footer>
+			<div id="footer">
+            <div class="text-center">
+            <h2>Infos</h2>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3">
+							<h3 class="section-title">Description</h3>
+							<p>En cour de dev. Live perso sans t'chat pour avoir le t'chat aller sur la page perso de chacun ci-contre. </p>
+						</div>
+						
+						<div class="col-md-3">
+							<h3 class="section-title">Page perso</h3>
+							<ul>
+								<li><a href="http://psyko.me/Nilam.html">NialmTv</a></li>
+								<li><a href="http://psyko.me/Psyko.html">Psyko</a></li>
+								<li><a href="#">Bestp44</a></li>
+								<li><a href="#">Striikous</a></li>
+                                <li><a href="#">MrKiwixx</a></li>
+							</ul>
+						</div>
+
+						<div class="col-md-4">
+							<h3 class="section-title">Photos ( rien )</h3>
+							<ul class="float">
+								<li><a href="#">Natures</a></li>
+								<li><a href="#">Adventure</a></li>
+								<li><a href="#">Wedding</a></li>
+								<li><a href="#">Food &amp; Drinks</a></li>
+								<li><a href="#">Animals</a></li>
+								<li><a href="#">Cars</a></li>
+							</ul>
+							<ul class="float">
+								<li><a href="#">Architecture</a></li>
+								<li><a href="#">Wallpaper Car</a></li>
+								<li><a href="#">Business</a></li>
+								<li><a href="#">Lanscape</a></li>
+								<li><a href="#">Environment</a></li>
+								<li><a href="#">Climate</a></li>
+							</ul>
+						</div>
+						<div class="col-md-2">
+							<h3 class="section-title">Information ( rien )</h3>
+							<ul>
+								<li><a href="#">Terms &amp; Condition</a></li>
+								<li><a href="#">License</a></li>
+								<li><a href="#">Privacy &amp; Policy</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="row copy-right">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p class="fh5co-social-icon">
+								<a href="#"><i class="icon-twitter2"></i></a>
+								<a href="#"><i class="icon-facebook2"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-dribbble2"></i></a>
+								<a href="#"><i class="icon-youtube"></i></a>
+							</p>
+							<p>Copyright 2016 Psyko</p>
+						</div>
+					</div>
+				</div>
+			</div>
+            </div>
+		</footer>
+	
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+	<!-- gridrotator -->
+	<script type="text/javascript" src="js/jquery.gridrotator.js"></script>
+	<!-- Magnific Popup -->
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    
+    <script src="js/jquery.fitvids.js"></script> 
+
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	<script type="text/javascript">	
+		$(function() {
+		
+			$( '#ri-grid' ).gridrotator( {
+				rows : 3,
+				// number of columns 
+				columns : 7,
+				w2048 : { rows : 3, columns :  6},
+				w1024 : { rows : 3, columns : 5 },
+				w768 : {rows : 3,columns : 4 },
+				w480 : {rows : 3,columns : 3 },
+				w320 : {rows : 2,columns : 2 },
+				w240 : {rows : 1,columns : 1 },
+				preventClick : false
+			} );
+		
+		});
+	</script>
+
+	</body>
+</html>
+

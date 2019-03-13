@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="block.php.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="block.textformat.php" server="psyko.me//public_html/" local="129307847000000000" remote="131081412600000000" Dst="2" />
+<file name="function.counter.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="function.cycle.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="function.fetch.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="function.html_checkboxes.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="function.html_image.php" server="psyko.me//public_html/" local="129307847000000000" remote="131081412600000000" Dst="2" />
+<file name="function.html_options.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="function.html_radios.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="function.html_select_date.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="function.html_select_time.php" server="psyko.me//public_html/" local="129307847000000000" remote="131081412600000000" Dst="2" />
+<file name="function.html_table.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="function.mailto.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="function.math.php" server="psyko.me//public_html/" local="129307847000000000" remote="131081412600000000" Dst="2" />
+<file name="function.popup.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081412600000000" Dst="2" />
+<file name="function.popup_init.php" server="psyko.me//public_html/" local="129307847000000000" remote="131081412600000000" Dst="2" />
+<file name="modifier.capitalize.php" server="psyko.me//public_html/" local="129307847000000000" remote="131081413200000000" Dst="2" />
+<file name="modifier.date_format.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifier.debug_print_var.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifier.escape.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifier.regex_replace.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifier.replace.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifier.spacify.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifier.truncate.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.cat.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.count_characters.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.count_paragraphs.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.count_sentences.php" server="psyko.me//public_html/" local="129307847000000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.count_words.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.default.php" server="psyko.me//public_html/" local="129307847000000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.indent.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.lower.php" server="psyko.me//public_html/" local="129307847000000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.noprint.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.string_format.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.strip.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.strip_tags.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.upper.php" server="psyko.me//public_html/" local="129307847000000000" remote="131081413200000000" Dst="2" />
+<file name="modifiercompiler.wordwrap.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="outputfilter.trimwhitespace.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="shared.escape_special_chars.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="shared.make_timestamp.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+<file name="variablefilter.htmlspecialchars.php" server="psyko.me//public_html/" local="129307847020000000" remote="131081413200000000" Dst="2" />
+</dwsync>
